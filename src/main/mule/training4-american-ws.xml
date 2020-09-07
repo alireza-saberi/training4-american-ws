@@ -9,5 +9,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="training4-american-wsFlow" doc:id="ba21aa95-293a-4e1a-8b00-3842677ed049" >
 		<http:listener doc:name="Listener" doc:id="3a06d520-9f34-45c0-a21f-b9b4179ee69e" config-ref="HTTP_Listener_config" path="/flights"/>
+		<set-payload value="Flight info" doc:name="Set Payload" doc:id="51a4de42-9c0f-4d18-b86e-a0d2021e7690" />
 	</flow>
 </mule>
